@@ -12,8 +12,8 @@ class Profile
 
 public:
     Profile()=default;
-    Profile(std::string_view bio, int registrationYear)    
-    ~Profile()
+    Profile(std::string_view bio, int registrationYear);    
+    ~Profile();
 
     void ИзменитьОписание(std::string_view bio); 
     void Осмотреть() const;

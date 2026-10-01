@@ -10,17 +10,17 @@ Profile::Profile(std::string_view bio, int registrationYear)
 
 Profile::~Profile()
 {
-    std::cout<<"[Profile] уничтожается" << std::end1;
+    std::cout<<"[Profile] уничтожается" << std::endl;
 }
 
 void Profile::ИзменитьОписание(std::string_view bio)
 {
-    m_bio = std::string(bio)
+    m_bio = std::string(bio);
 }
 
 void Profile::Осмотреть() const
 {
     std::cout<<"О себе: "<< m_bio
-              <<"| Год регистрации: "<<m_registrationYear<<std::end1;
+              <<"| Год регистрации: "<<m_registrationYear<<std::endl;
 }
 }
