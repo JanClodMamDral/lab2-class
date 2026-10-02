@@ -13,15 +13,15 @@ class User
 private:    
     std::string m_username{};
     Profile m_profile{};
-    std::vector<Post*> m_post{};
+    std::vector<Post*> m_posts{};
 
 public:
     User() = default;
 
-    user(std::string_view username);
+    User(std::string_view username);
     ~User();
 
-    void ЗаполнитьПрофиль(std::string_view bio, int registrationYear);
+    void ЗаполнитьПрофиль(std::string_view bio);
     void ДобавитьЗапись(Post* post);
     void ПоказатьЛенту() const;
 

@@ -6,7 +6,7 @@ Post::Post(std::string_view text)
 {
     if (text.empty())
     {
-        std::cout<<"Ошибка: текст поста не может быть пустым"<<endl;
+        std::cout<<"Ошибка: текст поста не может быть пустым"<<std::endl;
         m_text = "[пустой пост отклонен]";
     }
     else
@@ -16,7 +16,7 @@ Post::Post(std::string_view text)
 }
 Post::~Post()
 {
-    std::cout<<"[Post] уничтожается: \""<<m_text"\""<<std::endl;
+    std::cout<<"[Post] уничтожается: \""<<m_text<<"\""<<std::endl;
 }
 
 void Post::ПоставитьЛайк()

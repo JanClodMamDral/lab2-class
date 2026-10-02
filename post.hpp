@@ -23,7 +23,7 @@ public:
         return m_text;
     }
 
-    [[nodiscard]]std::string_view GetLikesCount() const
+    [[nodiscard]] auto GetLikesCount() const
     {
         return m_likesCount;
     }

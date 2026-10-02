@@ -2,10 +2,8 @@
 #include <iostream>
 namespace social_network
 {
-Profile::Profile(std::string_view bio, int registrationYear)
+Profile::Profile(std::string_view bio)
     :m_bio{bio}
-    , m_registrationYear{registrationYear}
-
 {}
 
 Profile::~Profile()
@@ -20,7 +18,6 @@ void Profile::ИзменитьОписание(std::string_view bio)
 
 void Profile::Осмотреть() const
 {
-    std::cout<<"О себе: "<< m_bio
-              <<"| Год регистрации: "<<m_registrationYear<<std::endl;
+    std::cout<<"О себе: "<< m_bio << std::endl;
 }
 }

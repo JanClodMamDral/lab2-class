@@ -7,12 +7,12 @@ namespace social_network
 {
 class Profile
 {
+private:    
     std::string m_bio{};
-    int m_registrationYear{0};
 
 public:
     Profile()=default;
-    Profile(std::string_view bio, int registrationYear);    
+    Profile(std::string_view bio);    
     ~Profile();
 
     void ИзменитьОписание(std::string_view bio); 
@@ -21,11 +21,6 @@ public:
     [[nodiscard]] std::string_view GetBio() const
     {
         return m_bio;
-    }
-
-    [[nodiscard]] auto GetRegistrationYear() const
-    {
-        return m_registrationYear;
     }
 };
 }
